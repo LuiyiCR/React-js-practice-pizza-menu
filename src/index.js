@@ -75,11 +75,17 @@ function Menu() {
       <h2>Our Menu:</h2>
 
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzaData.map((pizza) => (
-            <Pizza pizzaObj={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <React.Fragment>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            iste? Laboriosam dolorum aliquam debitis dolorem.
+          </p>
+          <ul className="pizzas">
+            {pizzaData.map((pizza) => (
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </React.Fragment>
       ) : null}
       {/* <Pizza
         name="Pizza Spinaci"
